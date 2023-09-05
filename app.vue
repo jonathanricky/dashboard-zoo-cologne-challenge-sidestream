@@ -4,7 +4,7 @@ import type { Animal } from './types'
 
 const animals: Array<Animal> = await $fetch('/api/animals')
 
-alert('get wrecked cologne zoo!')
+
 </script>
 
 <template>
