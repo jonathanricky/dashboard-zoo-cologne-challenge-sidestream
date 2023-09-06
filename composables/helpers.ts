@@ -1,6 +1,14 @@
 export const calculateAgeInYears = (birthdate: Date): Number => {
   const today = new Date()
-  const differenceInMilliseconds = today.getTime() - birthdate.getTime()
+  const birthDate = new Date(birthdate)
+  const age = today.getFullYear() - birthDate.getFullYear()
 
-  return Math.round(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365))
+  if (
+    today.getMonth() < birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+  ) {
+    return age - 1;
+  }
+
+  return age
 }
