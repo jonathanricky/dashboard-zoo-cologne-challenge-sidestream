@@ -23,16 +23,22 @@ const animalsSortedByName = computed(() => props.animals.slice().sort((animalA, 
         <th class="border-x-4">Gender</th>
         <th class="border-x-4">Age (yrs)</th>
         <th class="border-x-4">Weight (kg)</th>
+        <th class="border-x-4">Height (meter)</th>
+        <th class="border-x-4">Favourite Fruit</th>
+
       </tr>
     </thead>
     <tbody>
-      <tr v-for="({ id, species, name, gender, birthdate, weight }, animalIndex) in animalsSortedByName" :key="id" class="hover:bg-gray-200 hover:text-green-600 bg-gray-100 capitalize text-center border-4">
+      <tr v-for="({ id, species, name, gender, birthdate, weight, height, favouriteFruit }, animalIndex) in animalsSortedByName" :key="id" class="hover:bg-gray-200 hover:text-green-600 bg-gray-100 capitalize text-center border-4">
         <td class="border-x-4">{{ animalIndex + 1 }}</td>
         <td class="border-x-4">{{ species }}</td>
         <td class="border-x-4">{{ name }}</td>
         <td class="border-x-4">{{ gender }}</td>
         <td class="border-x-4">{{ calculateAgeInYears(birthdate) }}</td>
         <td class="border-x-4">{{ weight }}</td>
+        <td class="border-x-4">{{ height }}</td>
+        <td class="border-x-4">{{ favouriteFruit }}</td>
+
       </tr>
     </tbody>
   </table>
