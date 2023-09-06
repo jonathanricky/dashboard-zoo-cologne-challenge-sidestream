@@ -10,7 +10,7 @@ const animals: Array<Animal> = await $fetch('/api/animals')
 <template>
   <div class="mx-12">
     <h1 class="text-4xl">
-      Cologne Zoo
+      Cologne Zoo🦍
     </h1>
     <div class="my-2">
       <p>
@@ -21,7 +21,7 @@ const animals: Array<Animal> = await $fetch('/api/animals')
       </p>
     </div>
     <h2 class="text-2xl mt-8 mb-4">
-      Our (lovely) Animals:
+      Our (lovely) Animals🐣:
     </h2>
     <the-animal-table :animals="animals" />
   </div>
