@@ -48,8 +48,8 @@ Zookeepers reported that the error sometimes changes when reloading the page aft
 
 // Your solution
 
-- typo on server in api line 7, ANlMALS -> ANIMALS
-- delete bug alert on app.vue line 7
+- Typo on server in api, ANlMALS -> ANIMALS (line 7)
+- Delete bug alert on App.vue (line 7)
 
 ### Task 3: Start the documentation
 
