@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import type { PropType } from 'vue'
 import type { Animal } from '../types'
-import { calculateAgeInYears } from '../composables/helpers'
+import { calculateAgeInYears, calculateFoodNeeds } from '../composables/helpers'
 
 const props = defineProps({
   animals: {
@@ -25,7 +25,7 @@ const animalsSortedByName = computed(() => props.animals.slice().sort((animalA, 
         <th class="border-x-4">Weight (kg)</th>
         <th class="border-x-4">Height (meter)</th>
         <th class="border-x-4">Favourite Fruit</th>
-        <th class="border-x-4">Food Needs</th>
+        <th class="border-x-4">Food Needs (kg)</th>
       </tr>
     </thead>
     <tbody>
@@ -38,7 +38,7 @@ const animalsSortedByName = computed(() => props.animals.slice().sort((animalA, 
         <td class="border-x-4">{{ weight }}</td>
         <td class="border-x-4">{{ height }}</td>
         <td class="border-x-4">{{ favouriteFruit }}</td>
-        <td class="border-x-4">{{  }}</td>
+        <td class="border-x-4">{{ calculateFoodNeeds(birthdate, height, weight, favouriteFruit, gender, species) }}</td>
       </tr>
     </tbody>
   </table>
