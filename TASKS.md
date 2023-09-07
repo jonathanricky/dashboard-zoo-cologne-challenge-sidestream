@@ -147,6 +147,14 @@ Don't spend more thatn 15-30 minutes here - planning like this can quickly becom
 
 // Your solution
 
+- First, make a menu / button to bring zookeepers to feeding schedule page
+- The UI interface of the schedule are shown like a calendar that grouped per week and day
+- Group tasks by day to create a "todo" list for each day, as described in the example structure
+- Make feature to allow zookeepers to edit or delete previously scheduled feeding tasks
+- Implement notifications or reminders to alert zookeepers about upcoming feeding tasks
+- Test the feature thoroughly to ensure that it functions as expected, gather feedback and make improvements
+- Provide documentation, help and tooltips within the UI for zookeepers explaining how to use the new feature
+
 ### Task 9: Finish the documentation
 
 Revisit docs from step 3, see if you want to add anything. Also think about bonuses. Add a general comment about anything (inside the universe of the challenge or out of it) if you want to.
