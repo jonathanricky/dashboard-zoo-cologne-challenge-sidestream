@@ -9,7 +9,7 @@ const animals: Array<Animal> = await $fetch('/api/animals')
 
 <template>
   <div class="mx-12">
-    <h1 class="text-4xl">
+    <h1 class="text-4xl font-medium">
       Cologne Zoo🦁
     </h1>
     <br>
@@ -22,7 +22,7 @@ const animals: Array<Animal> = await $fetch('/api/animals')
         Please contact the zoo admin at "admin@zoo-cologne.de" for support with the dashboard. Cyber-Attacks from the Duisburg Zoo have become more frequent on the past, so be on the lookout.
       </p>
     </div>
-    <h2 class="text-2xl mt-8 mb-4">
+    <h2 class="text-xl mt-8 mb-4 font-medium">
       Our (lovely) Animals🦚:
     </h2>
     <the-animal-table :animals="animals" />
