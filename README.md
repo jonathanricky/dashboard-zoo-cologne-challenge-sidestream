@@ -25,16 +25,29 @@ This project aims to rebuild the Cologne Zoo's dashboard, which suffered signifi
 
 ### Tech Stack
 
-Our project is built with a modern tech stack, designed for efficiency and maintainability. The tool we use here is called `stackblitz`. It functions as a fully integrated development environment (IDE). We have defined helper commands for development, testing, running the app in production, linting, ... that are runnable via `npm run X` where X is the command, checkout the `package.json` for more.
+Our project is built with a modern tech stack, designed for efficiency and maintainability. The tool we use here is called `stackblitz`. It functions as a fully integrated development environment (IDE).
 
 Here's a closer look at the technologies and tools that drive our application:
 
-Frontend: Vue3, Nuxt3, TypeScript, TailwindCSS
-Backend: Node.js
-Testing: Vitest
-Linting: ESLint
+- Frontend: Vue3, Nuxt3, TypeScript, TailwindCSS
+- Backend: Node.js
+- Testing: Vitest
+- Linting: ESLint
 
 Please note that Storybook is currently disabled in StackBlitz due to compatibility issues.
+
+#### NPM Scripts
+
+To streamline development and testing, we have defined helper commands for development that are runnable via `npm run X` where X is the command, checkout the `package.json` for more:
+
+- dev: Start the development server with `nuxi dev`.
+- build: Build the application with `nuxi build`.
+- lint: Lint the codebase, including type checking with `nuxi typecheck` and style linting with ESLint.
+- test: Run tests using Vitest.
+- test:watch: Run tests continuously for ongoing development.
+- prepare: Install Husky, which helps with Git hooks.
+- test-for-reviewer: Build the application and run tests for the reviewer.
+- hello: Display a message to guide the IT Director in the project's initial tasks. The message can be found in `TASKS.md`.
 
 ### Getting Started
 
@@ -42,15 +55,13 @@ Please note that Storybook is currently disabled in StackBlitz due to compatibil
 
 Before diving into the revitalization process, ensure you have the following tools and technologies in place:
 
-Node.js (v16.14.2) : You'll need Node.js installed on your system. If it's not already installed, you can download it from [Node.js](https://nodejs.org/en) Official Website.
+`Node.js (v16.14.2)`: You'll need Node.js installed on your system. If it's not already installed, you can download it from [Node.js](https://nodejs.org/en) Official Website.
 
-npm (v8.5.0) : The Node.js installation comes with npm, the Node Package Manager. Make sure it's available in your environment.
+`npm (v8.5.0)`: The Node.js installation comes with npm, the Node Package Manager. Make sure it's available in your environment.
 
 #### Installation
 
 Follow these steps to set up the project and get it running on your local machine:
-
-Clone the Repository: Begin by cloning this project's repository to your local machine using the following command:
 
 ```
 git clone https://github.com/your-username/dashboard-cologne-zoo.git
@@ -59,7 +70,7 @@ cd dashboard-cologne-zoo
 
 #### Install Dependencies:
 
-Use npm to install the project dependencies. This step will ensure you have all the required libraries and packages.
+Use `npm` to install the project dependencies. This step will ensure you have all the required libraries and packages.
 
 ```
 npm install
@@ -81,7 +92,7 @@ You can access the application through your web browser at http://localhost:3000
 
 #### Testing
 
-Ensuring the reliability and stability of our application is a top priority. We use Vitest, a testing framework, to validate our code and components. Here's how testing works:
+Ensuring the reliability and stability of our application is a top priority. We use `Vitest`, a testing framework, to validate our code and components. Here's how testing works:
 
 ```
 npm run test
@@ -108,6 +119,6 @@ The Cologne Zoo's dashboard project is actively maintained and under ongoing dev
 
 For questions, feedback, or collaboration inquiries, feel free to reach out to our support resources:
 
-Email:[admin@zoo-cologne.de](admin@zoo-cologne.de)
+Email: [admin@zoo-cologne.de](admin@zoo-cologne.de)
 
 We value your input and look forward to hearing from you.✌️
