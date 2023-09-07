@@ -42,10 +42,10 @@ To streamline development and testing, we have defined helper commands for devel
 
 - dev: Start the development server with `nuxi dev`.
 - build: Build the application with `nuxi build`.
-- lint: Lint the codebase, including type checking with `nuxi typecheck` and style linting with ESLint.
-- test: Run tests using Vitest.
-- test:watch: Run tests continuously for ongoing development.
-- prepare: Install Husky, which helps with Git hooks.
+- lint: Lint the codebase, including type checking with `nuxi typecheck` and style linting with `ESLint`.
+- test: Run tests using `Vitest`.
+- test: watch: Run tests continuously for ongoing development.
+- prepare: Install `Husky`, which helps with `Git` hooks.
 - test-for-reviewer: Build the application and run tests for the reviewer.
 - hello: Display a message to guide the IT Director in the project's initial tasks. The message can be found in `TASKS.md`.
 
@@ -65,6 +65,7 @@ Follow these steps to set up the project and get it running on your local machin
 
 ```
 git clone https://github.com/your-username/dashboard-cologne-zoo.git
+
 cd dashboard-cologne-zoo
 ```
 
