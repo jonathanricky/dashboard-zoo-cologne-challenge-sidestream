@@ -160,3 +160,6 @@ Don't spend more thatn 15-30 minutes here - planning like this can quickly becom
 Revisit docs from step 3, see if you want to add anything. Also think about bonuses. Add a general comment about anything (inside the universe of the challenge or out of it) if you want to.
 
 // Your solution
+
+Please check my Readme.md file by clicking this link below
+[README.md](https://stackblitz.com/edit/dashboard-zoo-cologne-challenge-rajnqp?file=README.md)
