@@ -38,6 +38,11 @@ Please take stock fo the page using developer tools, your instincts, ... and wri
 
 // Your solution
 
+- npm run dev not running properly
+- There is some bug from hacker attack, e.g : alert, typo
+- Read.me file is still empty
+- Design of the Dashboard still blank / basic
+
 ### Task 2: Get the basics running again
 
 Now that we know that is broken, let's try to get things running again, step by step. First we should aim to just get the project to start. Please fix the problem that stops `npm run dev` from working out. Then:
@@ -48,8 +53,8 @@ Zookeepers reported that the error sometimes changes when reloading the page aft
 
 // Your solution
 
-- Typo on server in api, ANlMALS -> ANIMALS (line 7)
-- Delete bug alert on App.vue (line 7)
+- Typo on server in api, ANlMALS -> ANIMALS [line 7]
+- Delete bug alert on App.vue [line 7]
 
 ### Task 3: Start the documentation
 
@@ -59,11 +64,18 @@ Add your solution below, either as an inline text or link to new documentation f
 
 // Your solution
 
+Please check my Readme.md file by clicking this link below
+[README.md](https://stackblitz.com/edit/dashboard-zoo-cologne-challenge-rajnqp?file=README.md)
+
 ### Task 4: Test fixing
 
 There's a failing test that for the age calculation helper. Can you figure out what is broken in the implementation or the test it is and resolve the problem? All zookeepers are really interested in what is going on here.
 
 // Your solution
+
+- The usage of .getTime is to call date in YYYYMMDD TZ (millisecond) format
+- Missing const birthDate to properly calling birthdate data
+- Age calculation Composables not called properly in TheAnimalTable.vue
 
 ### Task 5: UI Fixing and Improvement
 
@@ -77,11 +89,23 @@ Please fix the two above problems and outline what was necessarry to do so.
 
 // Your solution
 
+1. Add Name on thead (table header) and name data on tbody (table body) [line 32] on TheAnimalTable.vue
+2. Fix the animalsSortedByName function by using animalA.name.localeCompare(animalB.name) [line 14]
+3.  - Use .getFullYear instead of .getTime, because it is easier to substract years than milliseconds
+    - Add const birthDate to properly calling birthdate data
+    - Substract the difference and store in const named age
+    - If the birthdate same as the year, but still in future, const age substract by one
+    - Add calculateAgeInYears(birthdate) to the "mustache" (double curly braces) on TheAnimalTable.vue [line 37]
+
 ### Task 6: UI Feature 1
 
 The zookeepers want to be able to see all details of an animal. Please create such a view that allows them to do so, outline anything about your process while adding the view below. The zookeepers didn't have time for more information, sorry. They'll surely be glad to criticize the first version intensly though and will want to know why you went for the approach you chose.
 
 // Your solution
+
+- Add all properties from Animal interface in types.d.ts to thead (table header) in TheAnimalTable.vue
+- Add properties data to tbody (table body) in TheAnimalTable.vue
+- Add some design in TheAnimalTable.vue and app.vue using Tailwind, e.g : color, border, text transform, hover effect
 
 ### Task 7: Logic Feature
 
