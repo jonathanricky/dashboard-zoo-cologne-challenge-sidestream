@@ -1,13 +1,13 @@
 export const calculateAgeInYears = (birthdate: Date): number => {
   const today = new Date()
   const birthDate = new Date(birthdate)
-  const age = today.getFullYear() - birthDate.getFullYear()
+  let age = today.getFullYear() - birthDate.getFullYear()
 
   if (
     today.getMonth() < birthDate.getMonth() ||
     (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
   ) {
-    return age - 1;
+    return age--;
   }
 
   return age

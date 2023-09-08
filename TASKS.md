@@ -89,7 +89,7 @@ Please fix the two above problems and outline what was necessarry to do so.
 
 // Your solution
 
-1. Add Name on thead (table header) and name data on tbody (table body) [line 32] on TheAnimalTable.vue
+1. Add Name on thead (table header) [line 22] and name data on tbody (table body) [line 32] on TheAnimalTable.vue
 2. Fix the animalsSortedByName function by using animalA.name.localeCompare(animalB.name) [line 14]
 3.  - Use .getFullYear instead of .getTime, because it is easier to substract years than milliseconds
     - Add const birthDate to properly calling birthdate data
